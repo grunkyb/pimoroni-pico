@@ -7,7 +7,22 @@ function(enable_ulab)
 
         # Determines, whether scipy is defined in ulab. The sub-modules and functions
         # of scipy have to be defined separately
-        ULAB_HAS_SCIPY=0
+        ULAB_HAS_SCIPY=1
+        ULAB_SCIPY_HAS_LINALG_MODULE=0
+        ULAB_SCIPY_LINALG_HAS_CHO_SOLVE=0
+        ULAB_SCIPY_LINALG_HAS_SOLVE_TRIANGULAR=0
+        ULAB_SCIPY_HAS_SIGNAL_MODULE=0
+        ULAB_SCIPY_HAS_OPTIMIZE_MODULE=1
+        ULAB_SCIPY_OPTIMIZE_HAS_BISECT=0
+        ULAB_SCIPY_OPTIMIZE_HAS_CURVE_FIT=0
+        ULAB_SCIPY_OPTIMIZE_HAS_FMIN=0
+        ULAB_SCIPY_OPTIMIZE_HAS_NEWTON=1
+        ULAB_SCIPY_HAS_SPECIAL_MODULE=1
+        ULAB_SCIPY_SPECIAL_HAS_ERF=1
+        ULAB_SCIPY_SPECIAL_HAS_ERFC=0
+        ULAB_SCIPY_SPECIAL_HAS_GAMMA=0
+        ULAB_SCIPY_SPECIAL_HAS_GAMMALN=0
+        ULAB_HAS_UTILS_MODULE=0
 
         # The maximum number of dimensions the firmware should be able to support
         # Possible values lie between 1, and 4, inclusive
